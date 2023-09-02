@@ -74,8 +74,8 @@
         <label for="name">Name:</label>
         <input
           type="text"
-          id="create-stage-name"
-          name="stage-name"
+          id="create-name"
+          name="name"
           placeholder="What is the stage name of artist"
           required
         />
@@ -91,7 +91,7 @@
         <input
           type="text"
           id="create-active-since"
-          name="age"
+          name="active-since"
           placeholder="What year was the artist first active"
           required
         />
@@ -99,7 +99,7 @@
         <input
           type="text"
           id="create-label"
-          name="age"
+          name="label"
           placeholder="What label is the artist under"
           required
         />
@@ -130,7 +130,7 @@
         <input
           type="text"
           id="create-description"
-          name="debt"
+          name="description"
           placeholder="Write a short description of the artist"
         />
         <label for="image">Image: </label>
@@ -146,95 +146,98 @@
     </dialog>
 
     <!-- UPDATE DIALOG-->
-    <dialog id="dialog-update-user">
+    <dialog id="dialog-update-artist">
       <form>
         <button id="dialog-close-btn">X</button>
       </form>
-      <h2>Opdater medlem</h2>
-      <form id="form-update-user" method="dialog">
-        <label for="update-firstName">Fornavn:</label>
+      <h2>Edit artist</h2>
+      <form id="form-update-artist" method="dialog">
+        <button id="dialog-close-btn">X</button>
+      </form>
+      <h2>Edit artist:</h2>
+      <form id="form-edit-artist" method="dialog">
+        <label for="name">Name:</label>
         <input
           type="text"
-          id="update-firstName"
-          name="firstName"
-          placeholder="Opdater fornavn på medlem"
+          id="edit-name"
+          name="name"
+          placeholder="Edit stage name"
           required
         />
-        <label for="update-lastName">Efternavn:</label>
+        <label for="birthdate">Birthdate:</label>
         <input
           type="text"
-          id="update-lastName"
-          name="lastName"
-          placeholder="Opdater efternavn på medlem"
+          id="edit-birthdate"
+          name="birthdate"
+          placeholder="Edit brithdate of artist"
           required
         />
-        <label for="update-age">Alder:</label>
+        <label for="active since">Active since:</label>
         <input
-          type="number"
-          id="update-age"
-          name="age"
-          placeholder="Opdater alder på medlem"
+          type="text"
+          id="edit-active-since"
+          name="active-since"
+          placeholder="Edit when the artist first active"
           required
         />
-        <label for="update-gender">Køn:</label>
-        <select name="gender" id="update-gender" required>
-          <option value="">Ikke valgt</option>
-          <option value="mand">Mand</option>
-          <option value="kvinde">Kvinde</option>
-          <option value="andet">Andet</option>
-        </select>
-        <label for="update-subscription">Medlemsskab:</label>
-        <select name="subscription" id="update-subscription" required>
-          <option value="">Ikke valgt</option>
-          <option value="senior">Senior</option>
-          <option value="junior">Junior</option>
-          <option value="passiv">Passiv</option>
-        </select>
-        <label for="update-role">Rolle:</label>
-        <select name="role" id="update-role" required>
-          <option value="">Ikke valgt</option>
-          <option value="elitesvømmer">Elitesvømmer</option>
-          <option value="svømmer">Svømmer</option>
-          <option value="træner">Træner</option>
-        </select>
-        <label for="update-discipline">Disciplin:</label>
-        <select name="" id="update-discipline">
-          <option value="butterfly">Butterfly</option>
-          <option value="crawl">Crawl</option>
-          <option value="rygcrawl">Rygcrawl</option>
-          <option value="brystsvømning">Brystsvømning</option>
-        </select>
-        <div class="grid2rows">
-          <label for="extra-disclipline">Tilføj/fjern</label>
-          <div>
-            <button type="button" id="extra-discipline-btn-update">+</button>
-            <button type="button" id="remove-disciplines-btn-update">-</button>
-          </div>
-        </div>
-        <output id="discipline-output" name="discipline"></output>
-        <label for="coach" id="coach-update-label">Træner:</label>
-        <label for="update-debt">Gæld:</label>
-        <input type="number" name="debt" id="update-debt" />
-        <label for="update-image">Image: </label>
+        <label for="label">Label:</label>
+        <input
+          type="text"
+          id="create-label"
+          name="label"
+          placeholder="Edit label is the artist under"
+          required
+        />
+        <label for="website">Website:</label>
         <input
           type="url"
-          id="update-image"
-          name="image"
-          placeholder="Sæt IMG URL ind her"
+          id="edit-website"
+          name="website"
+          placeholder="Edit the artists website"
           required
         />
-        <button type="submit" id="form-update-btn">Opdater medlem</button>
+        <label for="genres">Genres:</label>
+        <select name="genres" id="edit-genres" required>
+          <option value="" selected>genre</option>
+          <option value="pop">pop</option>
+          <option value="country">country</option>
+          <option value="andet">Andet</option>
+        </select>
+        <div class="grid2rows">
+          <label for="extra-genre">Tilføj/fjern</label>
+          <div>
+            <button type="button" id="extra-genre-btn-edit">+</button>
+            <button type="button" id="remove-genre-btn-edit">-</button>
+          </div>
+        </div>
+        <output id="genre-output-edit" name="genre"></output>
+        <label for="description">Short description: </label>
+        <input
+          type="text"
+          id="edit-description"
+          name="description"
+          placeholder="Edit the description of the artist"
+        />
+        <label for="image">Image: </label>
+        <input
+          type="url"
+          id="edit-image"
+          name="image"
+          placeholder="Paste image url here"
+          required
+        />
+        <button type="submit" id="form-update-btn">Update artist</button>
       </form>
     </dialog>
 
     <!--DELETE DIALOG-->
-    <dialog id="dialog-delete-user">
-      <h2>Vil du slette dette medlem?</h2>
-      <p id="dialog-delete-user-name"></p>
-      <form action="" id="form-delete-user">
+    <dialog id="dialog-delete-artist">
+      <h2>Are you sure you would like to delete the artist?</h2>
+      <p id="dialog-delete-artist"></p>
+      <form action="" id="form-delete-artist">
         <div id="delete-grid">
-          <input id="btn-yes" type="submit" value="Ja" />
-          <input id="btn-no" type="button" value="Nej" />
+          <input id="btn-yes" type="submit" value="Yes" />
+          <input id="btn-no" type="button" value="No" />
         </div>
       </form>
     </dialog>

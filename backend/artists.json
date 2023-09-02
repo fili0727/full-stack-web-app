@@ -5,7 +5,7 @@
     "birthdate": "18-12-2001",
     "active since": "2015",
     "genres": ["pop", "electropop", "alternative"],
-    "labels": "Darkroom, Interscope Records",
+    "labels": "Darkroom",
     "website": "https://www.billieeilish.com",
     "image": "https://static.billboard.com/files/media/billie-eilish-2018-1548-compressed.jpg",
     "shortDescription": "Chart-topping teenage sensation."
@@ -16,7 +16,7 @@
     "birthdate": "13-12-1989",
     "active since": "2006",
     "genres": ["pop", "country", "folk", "alternative rock"],
-    "labels": "republic records",
+    "labels": "Republic Records",
     "website": "https://www.taylorswift.com",
     "image": "https://www.rollingstone.com/wp-content/uploads/2023/07/Taylor-Swift-Speak-Now-Is-Here.jpg",
     "shortDescription": "The music industry"
@@ -27,7 +27,7 @@
     "birthdate": "05-05-1988",
     "active since": "2006",
     "genres": ["pop", "soul", "R&B"],
-    "labels": "XL Recordings, Columbia Records",
+    "labels": "XL Recordings",
     "website": "https://www.adele.com",
     "image": "https://www.billboard.com/files/media/Adele-21-press-2012-billboard-1548-compressed.jpg",
     "shortDescription": "The voice of a generation."
@@ -38,7 +38,7 @@
     "birthdate": "17-02-1991",
     "active since": "2005",
     "genres": ["pop", "folk", "hip hop"],
-    "labels": "Asylum Records, Atlantic Records",
+    "labels": "Asylum Records",
     "website": "https://www.edsheeran.com",
     "image": "https://www.officialcharts.com/media/647231/ed-sheeran.jpg?width=796&mode=crop&scale=both",
     "shortDescription": "Chart-topping singer-songwriter."
@@ -49,7 +49,7 @@
     "birthdate": "04-09-1981",
     "active since": "1990",
     "genres": ["R&B", "pop", "hip hop"],
-    "labels": "Columbia Records, Parkwood Entertainment",
+    "labels": "Parkwood Entertainment",
     "website": "https://www.beyonce.com",
     "image": "https://static.billboard.com/files/media/beyonce-queen-b-01-2020-billboard-1548-compressed.jpg",
     "shortDescription": "Singer-songwriter who first achieved fame with the R&B group Destiny's Child"
@@ -60,7 +60,7 @@
     "birthdate": "28-12-1978",
     "active since": "2004",
     "genres": ["R&B", "soul", "pop"],
-    "labels": "GOOD Music, Columbia Records",
+    "labels": "GOOD Music",
     "website": "https://www.johnlegend.com",
     "image": "https://static.billboard.com/files/media/john-legend-2017-performance-1548-compressed.jpg",
     "shortDescription": "Singer and songwriter extraordinaire."
@@ -71,7 +71,7 @@
     "birthdate": "24-10-1986",
     "active since": "2001",
     "genres": ["hip hop", "R&B", "pop"],
-    "labels": "OVO Sound, Republic Records",
+    "labels": "OVO Sound",
     "website": "https://www.drakeofficial.com",
     "image": "https://www.billboard.com/files/media/Drake-cover-art-Signs-single-2017-billboard-1548-compressed.jpg",
     "shortDescription": "Chart-topping rapper and singer."
@@ -82,7 +82,7 @@
     "birthdate": "20-02-1988",
     "active since": "2005",
     "genres": ["pop", "R&B", "dancehall"],
-    "labels": "Roc Nation, Westbury Road Entertainment",
+    "labels": "Roc Nation",
     "website": "https://www.rihannanow.com",
     "image": "https://static.billboard.com/files/media/rihanna-bb-2016-1548-compressed.jpg",
     "shortDescription": "Iconic singer, actress, and fashion designer."
@@ -93,7 +93,7 @@
     "birthdate": "17-10-1972",
     "active since": "1996",
     "genres": ["hip hop", "rap"],
-    "labels": "Shady Records, Aftermath Entertainment",
+    "labels": "Shady Records",
     "website": "https://www.eminem.com",
     "image": "https://static.billboard.com/files/media/eminem-2017-performance-billboard-1548-compressed.jpg",
     "shortDescription": "One of the greatest rappers of all time."
@@ -137,7 +137,7 @@
     "birthdate": "16-03-1996",
     "active since": "1996",
     "genres": ["alternative rock", "pop", "indie rock"],
-    "labels": "Parlophone, Atlantic Records",
+    "labels": "Parlophone",
     "website": "https://www.coldplay.com",
     "image": "https://static.billboard.com/files/media/coldplay-2017-performance-billboard-1548-compressed.jpg",
     "shortDescription": "Internationally acclaimed British rock band."
@@ -170,7 +170,7 @@
     "birthdate": "16-02-1990",
     "active since": "2010",
     "genres": ["R&B", "pop", "hip hop"],
-    "labels": "XO, Republic Records",
+    "labels": "XO",
     "website": "https://www.theweeknd.com",
     "image": "https://static.billboard.com/files/media/the-weeknd-2020-performance-1548-compressed.jpg",
     "shortDescription": "Grammy-winning R&B superstar."
@@ -192,7 +192,7 @@
     "birthdate": "21-06-1985",
     "active since": "2005",
     "genres": ["indie pop", "dream pop", "alternative"],
-    "labels": "Polydor Records, Interscope Records",
+    "labels": "Polydor Records",
     "website": "https://www.lanadelrey.com",
     "image": "https://static.billboard.com/files/media/lana-del-rey-2021-grammys-1548-compressed.jpg",
     "shortDescription": "Alternative pop sensation known for her ethereal sound."
@@ -203,7 +203,7 @@
     "birthdate": "03-07-1987",
     "active since": "2008",
     "genres": ["pop rock", "indie rock", "electropop"],
-    "labels": "KIDinaKORNER, Interscope Records",
+    "labels": "KIDinaKORNER",
     "website": "https://www.imaginedragonsmusic.com",
     "image": "https://static.billboard.com/files/media/imagine-dragons-2017-1548-compressed.jpg",
     "shortDescription": "Grammy-winning rock band with a unique sound."
@@ -214,7 +214,7 @@
     "birthdate": "17-06-1987",
     "active since": "2004",
     "genres": ["hip hop", "rap"],
-    "labels": "Top Dawg Entertainment, Aftermath Entertainment, Interscope Records",
+    "labels": "Top Dawg Entertainment",
     "website": "https://www.kendricklamar.com",
     "image": "https://static.billboard.com/files/media/kendrick-lamar-2018-1548-compressed.jpg",
     "shortDescription": "Critically acclaimed rapper and songwriter."
@@ -280,7 +280,7 @@
     "birthdate": "25-03-1947",
     "active since": "1962",
     "genres": ["pop", "rock", "soft rock"],
-    "labels": "Rocket Records, Mercury Records",
+    "labels": "Rocket Records",
     "website": "https://www.eltonjohn.com",
     "image": "https://static.billboard.com/files/media/elton-john-2018-1548-compressed.jpg",
     "shortDescription": "Legendary singer-songwriter and pianist."
@@ -313,7 +313,7 @@
     "birthdate": "06-02-1945",
     "active since": "1962",
     "genres": ["reggae", "ska", "rocksteady"],
-    "labels": "Tuff Gong, Island Records",
+    "labels": "Tuff Gong",
     "website": "https://www.bobmarley.com",
     "image": "https://static.billboard.com/files/media/bob-marley-2017-1548-compressed.jpg",
     "shortDescription": "Reggae legend and cultural icon."
@@ -324,7 +324,7 @@
     "birthdate": "13-07-1971",
     "active since": "1970",
     "genres": ["rock", "pop", "progressive rock"],
-    "labels": "EMI, Parlophone",
+    "labels": "EMI",
     "website": "https://www.queenonline.com",
     "image": "https://static.billboard.com/files/media/queen-2019-1548-compressed.jpg",
     "shortDescription": "Legendary rock band led by Freddie Mercury."
@@ -335,7 +335,7 @@
     "birthdate": "29-08-1958",
     "active since": "1964",
     "genres": ["pop", "R&B", "dance"],
-    "labels": "Epic Records, Sony Music",
+    "labels": "Epic Records",
     "website": "https://www.michaeljackson.com",
     "image": "https://static.billboard.com/files/media/michael-jackson-2017-1548-compressed.jpg",
     "shortDescription": "The King of Pop and global music icon."
@@ -346,7 +346,7 @@
     "birthdate": "08-01-1947",
     "active since": "1962",
     "genres": ["rock", "pop", "experimental"],
-    "labels": "RCA Records, Columbia Records",
+    "labels": "RCA Records",
     "website": "https://www.davidbowie.com",
     "image": "https://static.billboard.com/files/media/david-bowie-2016-1548-compressed.jpg",
     "shortDescription": "Innovative musician and cultural chameleon."

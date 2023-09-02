@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>GrooveGrid</header>
+    <div class="filter-grid">
+      <div>
+        <button id="create-user-btn">create artist</button>
+      </div>
+      <div>
+        <label for="searchbar"></label>
+        <input type="search" id="searchbar" placeholder="Search..." />
+      </div>
+      <div>
+        <label for="sort">Sort:</label>
+        <select id="sortByGenre" class="sort">
+          <option value="" selected>Genre</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="hiphop">Hip Hop</option>
+          <option value="R&B">R&B</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="filter">Filter:</label>
+        <select id="filterBy" class="sort">
+          <option value="alle" selected>filter</option>
+          <option value="name">Name</option>
+          <option value="age">Age</option>
+          <option value="activeSince">Active since</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <section id="artists" class="grid-container"></section>
+    </div>
+    <footer>bla bla bla</footer>
+
+    <!-- ARTIST DIALOG-->
+
+    <dialog id="dialog-artist-info">
+      <form method="dialog">
+        <button id="dialog-close-btn">X</button>
+      </form>
+      <section class="dialog-grid">
+        <section>
+          <h3><strong>Artist Info</strong></h3>
+          <img id="dialog-image" />
+          <h4 id="dialog-name">Name</h4>
+          <ul>
+            <li>Birthdate: <span id="dialog-birthdate"></span></li>
+            <li>Genres: <span id="dialog-genres"></span></li>
+            <li>Active since: <span id="dialog-active-since"></span></li>
+            <li>Current label: <span id="dialog-label"></span></li>
+            <li>Website: <span id="dialog-website"></span></li>
+            <li>Artist description: <span id="dialog-description"></span></li>
+          </ul>
+        </section>
+      </section>
+    </dialog>
+
+    <!-- CREATE DIALOG-->
+    <dialog id="dialog-create-artist">
+      <form method="dialog">
+        <button id="dialog-close-btn">X</button>
+      </form>
+      <h2>Add artist:</h2>
+      <form id="form-create-artist" method="dialog">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="create-stage-name"
+          name="stage-name"
+          placeholder="What is the stage name of artist"
+          required
+        />
+        <label for="birthdate">Birthdate:</label>
+        <input
+          type="text"
+          id="create-birthdate"
+          name="birthdate"
+          placeholder="What is the brithdate of artist"
+          required
+        />
+        <label for="age">Active since:</label>
+        <input
+          type="text"
+          id="create-active-since"
+          name="age"
+          placeholder="What year was the artist first active"
+          required
+        />
+        <label for="label">Label:</label>
+        <input
+          type="text"
+          id="create-label"
+          name="age"
+          placeholder="What label is the artist under"
+          required
+        />
+        <label for="website">Website:</label>
+        <input
+          type="url"
+          id="create-website"
+          name="website"
+          placeholder="What is the artists website"
+          required
+        />
+        <label for="genres">Genres:</label>
+        <select name="genres" id="create-genres" required>
+          <option value="" selected>genre</option>
+          <option value="pop">pop</option>
+          <option value="country">country</option>
+          <option value="andet">Andet</option>
+        </select>
+        <div class="grid2rows">
+          <label for="extra-genre">Tilføj/fjern</label>
+          <div>
+            <button type="button" id="extra-genre-btn-create">+</button>
+            <button type="button" id="remove-genre-btn-create">-</button>
+          </div>
+        </div>
+        <output id="genre-output-create" name="genre"></output>
+        <label for="description">Short description: </label>
+        <input
+          type="text"
+          id="create-description"
+          name="debt"
+          placeholder="Write a short description of the artist"
+        />
+        <label for="image">Image: </label>
+        <input
+          type="url"
+          id="create-image"
+          name="image"
+          placeholder="Paste image url here"
+          required
+        />
+        <button id="form-create-btn">Create artist</button>
+      </form>
+    </dialog>
+
+    <!-- UPDATE DIALOG-->
+    <dialog id="dialog-update-user">
+      <form>
+        <button id="dialog-close-btn">X</button>
+      </form>
+      <h2>Opdater medlem</h2>
+      <form id="form-update-user" method="dialog">
+        <label for="update-firstName">Fornavn:</label>
+        <input
+          type="text"
+          id="update-firstName"
+          name="firstName"
+          placeholder="Opdater fornavn på medlem"
+          required
+        />
+        <label for="update-lastName">Efternavn:</label>
+        <input
+          type="text"
+          id="update-lastName"
+          name="lastName"
+          placeholder="Opdater efternavn på medlem"
+          required
+        />
+        <label for="update-age">Alder:</label>
+        <input
+          type="number"
+          id="update-age"
+          name="age"
+          placeholder="Opdater alder på medlem"
+          required
+        />
+        <label for="update-gender">Køn:</label>
+        <select name="gender" id="update-gender" required>
+          <option value="">Ikke valgt</option>
+          <option value="mand">Mand</option>
+          <option value="kvinde">Kvinde</option>
+          <option value="andet">Andet</option>
+        </select>
+        <label for="update-subscription">Medlemsskab:</label>
+        <select name="subscription" id="update-subscription" required>
+          <option value="">Ikke valgt</option>
+          <option value="senior">Senior</option>
+          <option value="junior">Junior</option>
+          <option value="passiv">Passiv</option>
+        </select>
+        <label for="update-role">Rolle:</label>
+        <select name="role" id="update-role" required>
+          <option value="">Ikke valgt</option>
+          <option value="elitesvømmer">Elitesvømmer</option>
+          <option value="svømmer">Svømmer</option>
+          <option value="træner">Træner</option>
+        </select>
+        <label for="update-discipline">Disciplin:</label>
+        <select name="" id="update-discipline">
+          <option value="butterfly">Butterfly</option>
+          <option value="crawl">Crawl</option>
+          <option value="rygcrawl">Rygcrawl</option>
+          <option value="brystsvømning">Brystsvømning</option>
+        </select>
+        <div class="grid2rows">
+          <label for="extra-disclipline">Tilføj/fjern</label>
+          <div>
+            <button type="button" id="extra-discipline-btn-update">+</button>
+            <button type="button" id="remove-disciplines-btn-update">-</button>
+          </div>
+        </div>
+        <output id="discipline-output" name="discipline"></output>
+        <label for="coach" id="coach-update-label">Træner:</label>
+        <label for="update-debt">Gæld:</label>
+        <input type="number" name="debt" id="update-debt" />
+        <label for="update-image">Image: </label>
+        <input
+          type="url"
+          id="update-image"
+          name="image"
+          placeholder="Sæt IMG URL ind her"
+          required
+        />
+        <button type="submit" id="form-update-btn">Opdater medlem</button>
+      </form>
+    </dialog>
+
+    <!--DELETE DIALOG-->
+    <dialog id="dialog-delete-user">
+      <h2>Vil du slette dette medlem?</h2>
+      <p id="dialog-delete-user-name"></p>
+      <form action="" id="form-delete-user">
+        <div id="delete-grid">
+          <input id="btn-yes" type="submit" value="Ja" />
+          <input id="btn-no" type="button" value="Nej" />
+        </div>
+      </form>
+    </dialog>
+    <div id="snackbar"></div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

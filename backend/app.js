@@ -5,6 +5,7 @@ import { log } from "console";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (request, response) => {
   response.send("Hello express.js 🤠");
@@ -12,8 +13,9 @@ app.get("/", (request, response) => {
 
 app.get("/artists", async (request, response) => {
   const data = await fs.readFile("artists.json");
-  const users = JSON.parse(data);
-  response.json(users);
+  const artists = JSON.parse(data);
+  const sortedArtists = artists.sort((a, b) => a.name.localeCompare(b.name));
+  response.json(sortedArtists);
 });
 app.get("/artists/:id", async (request, response) => {
   const id = Number(request.params.id);
@@ -30,7 +32,7 @@ app.post("/artists", async (request, response) => {
   const data = await fs.readFile("artists.json");
   const artists = JSON.parse(data);
   artists.push(newArtist);
-  // fs.writeFile("data.json", JSON.stringify(sortedUsers));
+  fs.writeFile("artists.json", JSON.stringify(artists));
   response.json(artists);
 });
 
@@ -39,7 +41,8 @@ app.put("/artists/:id", async (request, response) => {
 
   const data = await fs.readFile("artists.json");
   const artists = JSON.parse(data);
-  let artistToUpdate = artists.find(artist => artist.id === id);
+  // const sortedArtists = artists.sort((a, b) => a.name.localeCompare(b.name));
+  let artistToUpdate = artists.find(artist => artist.id == id);
   const body = request.body;
   artistToUpdate.name = body.name;
   artistToUpdate.birthdate = body.birthdate;
@@ -52,7 +55,7 @@ app.put("/artists/:id", async (request, response) => {
 
   console.log(body);
   console.log(artists);
-  fs.writeFile("artist.json", JSON.stringify(artists));
+  fs.writeFile("artists.json", JSON.stringify(artists));
   response.json(artists);
 });
 
@@ -63,9 +66,9 @@ app.delete("/artists/:id", async (request, response) => {
   const data = await fs.readFile("artists.json");
   const artists = JSON.parse(data);
 
-  const newArtists = artists.filter(artist => artist.id !== id);
+  const newArtists = artists.filter(artist => artist.id != id);
 
-  fs.writeFile("artist.json", JSON.stringify(newArtists));
+  fs.writeFile("artists.json", JSON.stringify(newArtists));
 
   response.json(artists);
 });

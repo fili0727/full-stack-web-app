@@ -7,7 +7,7 @@
     "genres": ["pop", "electropop", "alternative"],
     "label": "Darkroom",
     "website": "https://www.billieeilish.com",
-    "image": "https://static.billboard.com/files/media/billie-eilish-2018-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebd8b9980db67272cb4d2c3daf",
     "shortDescription": "Chart-topping teenage sensation."
   },
   {
@@ -22,17 +22,6 @@
     "shortDescription": "The music industry"
   },
   {
-    "id": "2",
-    "name": "Adele",
-    "birthdate": "05-05-1988",
-    "activeSince": "2006",
-    "genres": ["pop", "soul", "R&B"],
-    "label": "XL Recordings",
-    "website": "https://www.adele.com",
-    "image": "https://www.billboard.com/files/media/Adele-21-press-2012-billboard-1548-compressed.jpg",
-    "shortDescription": "The voice of a generation."
-  },
-  {
     "id": "3",
     "name": "Ed Sheeran",
     "birthdate": "17-02-1991",
@@ -40,7 +29,7 @@
     "genres": ["pop", "folk", "hip hop"],
     "label": "Asylum Records",
     "website": "https://www.edsheeran.com",
-    "image": "https://www.officialcharts.com/media/647231/ed-sheeran.jpg?width=796&mode=crop&scale=both",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/ed-sheeran-GettyImages-494227430_1600.jpg?resize=1200:*",
     "shortDescription": "Chart-topping singer-songwriter."
   },
   {
@@ -51,7 +40,7 @@
     "genres": ["R&B", "pop", "hip hop"],
     "label": "Parkwood Entertainment",
     "website": "https://www.beyonce.com",
-    "image": "https://static.billboard.com/files/media/beyonce-queen-b-01-2020-billboard-1548-compressed.jpg",
+    "image": "https://people.com/thmb/SmzmtSQ5vvyd48qYs4xbiU6LQoQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(788x305:790x307)/Beyonce-RENAISSANCE-WORLD-TOUR-01-070523-052a97232b1847f7bd70d7c62b216b67.jpg",
     "shortDescription": "Singer-songwriter who first achieved fame with the R&B group Destiny's Child"
   },
   {
@@ -62,7 +51,7 @@
     "genres": ["R&B", "soul", "pop"],
     "label": "GOOD Music",
     "website": "https://www.johnlegend.com",
-    "image": "https://static.billboard.com/files/media/john-legend-2017-performance-1548-compressed.jpg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1230039869.jpg",
     "shortDescription": "Singer and songwriter extraordinaire."
   },
   {
@@ -73,7 +62,7 @@
     "genres": ["hip hop", "R&B", "pop"],
     "label": "OVO Sound",
     "website": "https://www.drakeofficial.com",
-    "image": "https://www.billboard.com/files/media/Drake-cover-art-Signs-single-2017-billboard-1548-compressed.jpg",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/zan-t_Me63if8oqWYE9ENiPLlhA/0x224:2826x3050/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/11/894/n/1922398/87f6bb525e430e7bd44e40.22278576_/i/Drake.jpg",
     "shortDescription": "Chart-topping rapper and singer."
   },
   {
@@ -84,7 +73,7 @@
     "genres": ["pop", "R&B", "dancehall"],
     "label": "Roc Nation",
     "website": "https://www.rihannanow.com",
-    "image": "https://static.billboard.com/files/media/rihanna-bb-2016-1548-compressed.jpg",
+    "image": "https://static01.nyt.com/images/2023/02/09/multimedia/09halftime-walkup-mlpv/09halftime-walkup-mlpv-videoSixteenByNine3000.jpg",
     "shortDescription": "Iconic singer, actress, and fashion designer."
   },
   {
@@ -95,7 +84,7 @@
     "genres": ["hip hop", "rap"],
     "label": "Shady Records",
     "website": "https://www.eminem.com",
-    "image": "https://static.billboard.com/files/media/eminem-2017-performance-billboard-1548-compressed.jpg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/eminem_photo_by_dave_j_hogan_getty_images_entertainment_getty_187596325.jpg",
     "shortDescription": "One of the greatest rappers of all time."
   },
   {
@@ -106,7 +95,7 @@
     "genres": ["pop", "electropop"],
     "label": "Capitol Records",
     "website": "https://www.katyperry.com",
-    "image": "https://www.billboard.com/files/media/katy-perry-billboard-1548-compressed.jpg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/katy-perry-1676633628.jpg?crop=1.00xw:0.803xh;0,0.0500xh&resize=1200:*",
     "shortDescription": "Colorful and energetic popstar."
   },
   {
@@ -117,7 +106,7 @@
     "genres": ["pop", "R&B", "funk"],
     "label": "Atlantic Records",
     "website": "https://www.brunomars.com",
-    "image": "https://static.billboard.com/files/media/bruno-mars-bb-2018-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd",
     "shortDescription": "Multi-talented singer, songwriter, and performer."
   },
   {
@@ -128,7 +117,7 @@
     "genres": ["pop", "R&B"],
     "label": "Republic Records",
     "website": "https://www.arianagrande.com",
-    "image": "https://static.billboard.com/files/media/ariana-grande-bb-2018-1548-compressed.jpg",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/230828150531-ariana-grande-grammys-2020.jpg?c=16x9&q=h_720,w_1280,c_fill",
     "shortDescription": "Powerhouse vocalist and pop sensation."
   },
   {
@@ -139,7 +128,7 @@
     "genres": ["alternative rock", "pop", "indie rock"],
     "label": "Parlophone",
     "website": "https://www.coldplay.com",
-    "image": "https://static.billboard.com/files/media/coldplay-2017-performance-billboard-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb989ed05e1f0570cc4726c2d3",
     "shortDescription": "Internationally acclaimed British rock band."
   },
   {
@@ -150,7 +139,7 @@
     "genres": ["pop", "R&B"],
     "label": "Def Jam Recordings",
     "website": "https://www.justinbiebermusic.com",
-    "image": "https://static.billboard.com/files/media/justin-bieber-2021-a-loved-1548-compressed.jpg",
+    "image": "https://imageio.forbes.com/specials-images/imageserve/63d0095c7f394c0690922d82/Justin-Bieber-performs-on-day-three-of-Sziget-Festival-2022-on--budai-sziget-Island/0x0.jpg?crop=1617,910,x0,y80,safe&height=400&width=711&fit=bounds",
     "shortDescription": "Canadian pop sensation and heartthrob."
   },
   {
@@ -161,7 +150,7 @@
     "genres": ["pop", "dance-pop", "electropop"],
     "label": "Interscope Records",
     "website": "https://www.ladygaga.com",
-    "image": "https://static.billboard.com/files/media/lady-gaga-2017-1548-compressed.jpg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1127409044.jpg",
     "shortDescription": "Iconic singer, songwriter, and actress."
   },
   {
@@ -172,7 +161,7 @@
     "genres": ["R&B", "pop", "hip hop"],
     "label": "XO",
     "website": "https://www.theweeknd.com",
-    "image": "https://static.billboard.com/files/media/the-weeknd-2020-performance-1548-compressed.jpg",
+    "image": "https://variety.com/wp-content/uploads/2020/06/unnamed-1-2-e1593560403821.jpg",
     "shortDescription": "Grammy-winning R&B superstar."
   },
   {
@@ -183,7 +172,7 @@
     "genres": ["pop", "rock", "folk"],
     "label": "Island Records",
     "website": "https://www.shawnmendesofficial.com",
-    "image": "https://static.billboard.com/files/media/shawn-mendes-2019-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb46e7a06fa6dfefaed6a3f0db",
     "shortDescription": "Talented singer-songwriter and guitarist."
   },
   {
@@ -191,10 +180,10 @@
     "name": "Lana Del Rey",
     "birthdate": "21-06-1985",
     "activeSince": "2005",
-    "genres": ["indie pop", "dream pop", "alternative"],
+    "genres": ["indie pop", "alternative"],
     "label": "Polydor Records",
     "website": "https://www.lanadelrey.com",
-    "image": "https://static.billboard.com/files/media/lana-del-rey-2021-grammys-1548-compressed.jpg",
+    "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2020_21/3359676/200521-lana-del-rey-cs-316p.jpg",
     "shortDescription": "Alternative pop sensation known for her ethereal sound."
   },
   {
@@ -205,7 +194,7 @@
     "genres": ["pop rock", "indie rock", "electropop"],
     "label": "KIDinaKORNER",
     "website": "https://www.imaginedragonsmusic.com",
-    "image": "https://static.billboard.com/files/media/imagine-dragons-2017-1548-compressed.jpg",
+    "image": "https://www.billboard.com/wp-content/uploads/2022/12/imagine-dragons-Press-Photo-Credit-Eric-Ray-Davidson-2022-billboard-1548.jpg",
     "shortDescription": "Grammy-winning rock band with a unique sound."
   },
   {
@@ -213,10 +202,10 @@
     "name": "Kendrick Lamar",
     "birthdate": "17-06-1987",
     "activeSince": "2004",
-    "genres": ["hip hop", "rap"],
+    "genres": ["hiphop", "rap"],
     "label": "Top Dawg Entertainment",
     "website": "https://www.kendricklamar.com",
-    "image": "https://static.billboard.com/files/media/kendrick-lamar-2018-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb437b9e2a82505b3d93ff1022",
     "shortDescription": "Critically acclaimed rapper and songwriter."
   },
   {
@@ -224,10 +213,10 @@
     "name": "Dua Lipa",
     "birthdate": "22-08-1995",
     "activeSince": "2015",
-    "genres": ["pop", "dance-pop", "electropop"],
+    "genres": ["pop", "dance-pop"],
     "label": "Warner Records",
     "website": "https://www.dualipa.com",
-    "image": "https://static.billboard.com/files/media/dua-lipa-2020-aoty-1548-compressed.jpg",
+    "image": "https://wwd.com/wp-content/uploads/2023/08/GettyImages-1537575808.jpg",
     "shortDescription": "Chart-topping British pop sensation."
   },
   {
@@ -238,7 +227,7 @@
     "genres": ["pop", "rock", "country"],
     "label": "RCA Records",
     "website": "https://www.mileycyrus.com",
-    "image": "https://static.billboard.com/files/media/miley-cyrus-2020-1548-compressed.jpg",
+    "image": "https://www.instyle.com/thmb/nqUXjXs-V7hojMR1b1b_ySc7ZH8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1472442509-ea82a448d8c94a588d17ead2f2cc5a92.jpg",
     "shortDescription": "Multi-talented singer, songwriter, and actress."
   },
   {
@@ -246,10 +235,10 @@
     "name": "Post Malone",
     "birthdate": "04-07-1995",
     "activeSince": "2015",
-    "genres": ["hip hop", "pop", "rap"],
+    "genres": ["hiphop", "pop", "rap"],
     "label": "Republic Records",
     "website": "https://www.postmalone.com",
-    "image": "https://static.billboard.com/files/media/post-malone-2019-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb6be070445b03e0b63147c2c1",
     "shortDescription": "Versatile musician and rapper."
   },
   {
@@ -260,7 +249,7 @@
     "genres": ["R&B", "soul", "pop"],
     "label": "RCA Records",
     "website": "https://www.aliciakeys.com",
-    "image": "https://static.billboard.com/files/media/alicia-keys-2019-1548-compressed.jpg",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/200806120231-alicia-keys-elf-cosmetics.jpg?q=w_3000,h_2358,x_0,y_0,c_fill",
     "shortDescription": "Grammy-winning singer-songwriter and pianist."
   },
   {
@@ -271,7 +260,7 @@
     "genres": ["pop", "R&B", "soul"],
     "label": "Capitol Records",
     "website": "https://www.samsmithworld.com",
-    "image": "https://static.billboard.com/files/media/sam-smith-2021-1548-compressed.jpg",
+    "image": "https://cdn1.umg3.net/1248-cdn/portrait.jpg",
     "shortDescription": "Soulful and emotional vocalist."
   },
   {
@@ -279,10 +268,10 @@
     "name": "Elton John",
     "birthdate": "25-03-1947",
     "activeSince": "1962",
-    "genres": ["pop", "rock", "soft rock"],
+    "genres": ["pop", "rock"],
     "label": "Rocket Records",
     "website": "https://www.eltonjohn.com",
-    "image": "https://static.billboard.com/files/media/elton-john-2018-1548-compressed.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Elton_John_2011_Shankbone_2.JPG/1200px-Elton_John_2011_Shankbone_2.JPG",
     "shortDescription": "Legendary singer-songwriter and pianist."
   },
   {
@@ -293,7 +282,7 @@
     "genres": ["R&B", "pop", "soul"],
     "label": "Arista Records",
     "website": "https://www.whitneyhouston.com",
-    "image": "https://static.billboard.com/files/media/whitney-houston-2012-billboard-1548-compressed.jpg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-144485756.jpg?crop=1xw:0.75xh;center,top&resize=1200:*",
     "shortDescription": "The voice of a generation."
   },
   {
@@ -304,7 +293,7 @@
     "genres": ["rock", "alternative rock"],
     "label": "Island Records",
     "website": "https://www.u2.com",
-    "image": "https://static.billboard.com/files/media/u2-2020-billboard-1548-compressed.jpg",
+    "image": "https://www.billboard.com/wp-content/uploads/2022/07/U2-2022-press-Olaf-Heine-billboard-1548.jpg",
     "shortDescription": "Irish rock band with a profound impact."
   },
   {
@@ -312,10 +301,10 @@
     "name": "Bob Marley",
     "birthdate": "06-02-1945",
     "activeSince": "1962",
-    "genres": ["reggae", "ska", "rocksteady"],
+    "genres": ["reggae"],
     "label": "Tuff Gong",
     "website": "https://www.bobmarley.com",
-    "image": "https://static.billboard.com/files/media/bob-marley-2017-1548-compressed.jpg",
+    "image": "https://imgs.smoothradio.com/images/278791?width=4465&crop=1_1&signature=yHBccVauzUYQz4lHX63LAmK3M40=",
     "shortDescription": "Reggae legend and cultural icon."
   },
   {
@@ -326,7 +315,7 @@
     "genres": ["rock", "pop", "progressive rock"],
     "label": "EMI",
     "website": "https://www.queenonline.com",
-    "image": "https://static.billboard.com/files/media/queen-2019-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/b040846ceba13c3e9c125d68389491094e7f2982",
     "shortDescription": "Legendary rock band led by Freddie Mercury."
   },
   {
@@ -337,7 +326,7 @@
     "genres": ["pop", "R&B", "dance"],
     "label": "Epic Records",
     "website": "https://www.michaeljackson.com",
-    "image": "https://static.billboard.com/files/media/michael-jackson-2017-1548-compressed.jpg",
+    "image": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/06/26/16877546300462.jpg",
     "shortDescription": "The King of Pop and global music icon."
   },
   {
@@ -345,10 +334,10 @@
     "name": "David Bowie",
     "birthdate": "08-01-1947",
     "activeSince": "1962",
-    "genres": ["rock", "pop", "experimental"],
+    "genres": ["rock", "pop"],
     "label": "RCA Records",
     "website": "https://www.davidbowie.com",
-    "image": "https://static.billboard.com/files/media/david-bowie-2016-1548-compressed.jpg",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebb78f77c5583ae99472dd4a49",
     "shortDescription": "Innovative musician and cultural chameleon."
   },
   {
@@ -356,10 +345,10 @@
     "name": "Bob Dylan",
     "birthdate": "24-05-1941",
     "activeSince": "1961",
-    "genres": ["folk", "rock", "blues"],
+    "genres": ["folk", "rock"],
     "label": "Columbia Records",
     "website": "https://www.bobdylan.com",
-    "image": "https://static.billboard.com/files/media/bob-dylan-2017-1548-compressed.jpg",
+    "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRissO3SNYx_uDFQaAo1dgFk1pa-cKbMAUxl6mxIPKSSJ43f5v0EIh6yTcfoPYTDbwDDIMtxsHOvpGY5E8",
     "shortDescription": "Nobel laureate and influential folk-rock artist."
   },
   {
@@ -367,10 +356,10 @@
     "name": "Aerosmith",
     "birthdate": "01-09-1969",
     "activeSince": "1970",
-    "genres": ["rock", "hard rock", "blues rock"],
+    "genres": ["rock"],
     "label": "Columbia Records",
     "website": "https://www.aerosmith.com",
-    "image": "https://static.billboard.com/files/media/aerosmith-2017-1548-compressed.jpg",
+    "image": "https://parade.com/.image/t_share/MTk3NjQwNDY1NTc3NjgyMjIx/aerosmith-final-tour-peace-out-2023.jpg",
     "shortDescription": "Legendary rock band known for their timeless hits."
   },
   {
@@ -381,7 +370,7 @@
     "genres": ["pop", "R&B", "funk"],
     "label": "Warner Bros. Records",
     "website": "https://www.prince.com",
-    "image": "https://static.billboard.com/files/media/prince-2016-1548-compressed.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Prince_-_Prince.jpg/220px-Prince_-_Prince.jpg",
     "shortDescription": "Musical genius and pop icon."
   },
   {
@@ -392,7 +381,7 @@
     "genres": ["rock", "hard rock", "blues rock"],
     "label": "Atlantic Records",
     "website": "https://www.ledzeppelin.com",
-    "image": "https://static.billboard.com/files/media/led-zeppelin-2017-1548-compressed.jpg",
+    "image": "https://www.rollingstone.com/wp-content/uploads/2012/11/LedZeppelin.jpg",
     "shortDescription": "Pioneering rock band that redefined the genre."
   }
 ]

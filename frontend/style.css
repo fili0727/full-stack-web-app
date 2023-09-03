@@ -340,8 +340,8 @@ dialog select {
   margin-bottom: 10px;
   border: 2px solid black;
   border-radius: 4px;
-  background-color: var(--navy);
-  color: var(--text-color-light);
+  background-color: #ffc2d1;
+  color: black;
 }
 
 select {
@@ -360,8 +360,8 @@ select {
 /* dialog styling */
 
 dialog {
-  border-color: var(--navy);
-  background: linear-gradient(to bottom, #87ceeb, #0066cc);
+  border-color: #ffc2d1;
+  background: #ffc2d1;
   position: fixed;
   top: 90vh;
   max-height: 88vh;
@@ -384,7 +384,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background: rgb(172, 198, 201, 0.8);
+  background: rgba(255, 168, 224, 0.8);
 }
 
 dialog h2 {
@@ -417,7 +417,7 @@ button.btn-update:hover {
 #btn-no:hover,
 #btn-yes:hover {
   box-shadow: 0 4px 8px 2px;
-  background-color: hsla(200, 84%, 71%, 0.75);
+  background-color: hsla(313, 75%, 74%, 0.75);
 }
 
 #dialog-close-btn:hover {
@@ -457,8 +457,7 @@ button.btn-update:hover {
 /* FORM STYLING */
 
 #form-create-btn,
-#form-update-btn,
-#form-create-statistics-btn {
+#form-update-btn {
   border-radius: 3%;
   border: 2px solid black;
   padding: 1.5em 1em;
@@ -470,13 +469,11 @@ button.btn-update:hover {
 }
 
 #form-create-user,
-#form-update-user,
-#form-create-statistics {
-  padding: 1em 2em;
+#form-edit-artist {
+  padding: 1em;
   font-size: larger;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  text-align: left;
+  grid-template-columns: 2fr 2fr;
   align-items: center;
   gap: 3px;
 }
@@ -487,7 +484,7 @@ button.btn-update:hover {
 
   font-size: larger;
 
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
 }
 
 form label {

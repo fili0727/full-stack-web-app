@@ -9,11 +9,9 @@ async function readArtists() {
   return artists;
 }
 
-// Create HTML and display all users from given list
 function displayUsers(list) {
-  // reset <section id="users-grid" class="grid-container">...</section>
   document.querySelector("#artists-grid").innerHTML = "";
-  //loop through all users and create an article with content for each
+
   for (const artist of list) {
     document.querySelector("#artists-grid").insertAdjacentHTML(
       "beforeend",
@@ -39,15 +37,13 @@ function displayUsers(list) {
     document
       .querySelector("#artists-grid article:last-child .btn-update")
       .addEventListener("click", () => selectArtist(artist));
-    // To do: Add event listeners
+
     document
       .querySelector("#artists-grid article:last-child .btn-delete")
       .addEventListener("click", () => deleteUser(artist.id));
   }
 }
 
-// // ============ CREATE ============ //
-// // Create (POST) user to Firebase (Database) using REST API
 // async function createUser(event) {
 //   event.preventDefault();
 //   console.log("Opret bruger");
@@ -83,48 +79,91 @@ function displayUsers(list) {
 
 // // ============ UPDATE ============ //
 function selectArtist(artist) {
+  document.querySelector("#dialog-update-artist").showModal();
   // Set global varaiable
+  console.log(artist);
   selectedArtist = artist;
   // reference to update form
-  const form = document.querySelector("#form-update-artist");
+  const form = document.querySelector("#form-edit-artist");
 
-  // To do: set form input values with user.xxxx
   form.name.value = artist.name;
-  form.title.value = artist.title;
-  form.mail.value = artist.mail;
+  form.birthdate.value = artist.birthdate;
+  form.activeSince.value = artist.activeSince;
+  form.label.value = artist.label;
+  form.website.value = artist.website;
+  form.genres.value = artist.genres;
+  document.querySelector("#genre-output-edit").textContent = artist.genres;
+  form.description.value = artist.shortDescription;
   form.image.value = artist.image;
 
-  form.scrollIntoView({ behavior: "smooth" });
+  document
+    .querySelector("#extra-genre-btn-edit")
+    .addEventListener("click", () =>
+      addGenreToOutput(
+        document.querySelector("#edit-genres"),
+        document.querySelector("#genre-output-edit")
+      )
+    );
+  document
+    .querySelector("#remove-genre-btn-edit")
+    .addEventListener("click", () =>
+      removeDisciplineToOutput(document.querySelector("#genre-output-edit"))
+    );
 }
 
-// async function updateUser(event) {
-//   event.preventDefault();
-//   console.log("user");
-//   // To do: add variables with reference to input fields (event.target.xxxx.value)
-//   const name = event.target.name.value;
-//   const title = event.target.title.value;
-//   const mail = event.target.mail.value;
-//   const image = event.target.image.value;
+function addGenreToOutput(genreSelector, outputSelector) {
+  console.log("addToOutput");
+  const genreValue = genreSelector.value;
+  if (
+    genreValue != "" &&
+    outputSelector.textContent.includes(genreValue) == false
+  )
+    if (outputSelector.textContent != "")
+      outputSelector.textContent += ", " + genreValue;
+    else outputSelector.textContent += genreValue;
+}
+function removeDisciplineToOutput(outputSelector) {
+  outputSelector.textContent = "";
+}
 
-//   // update user
-//   const userToUpdate = { name, title, mail, image }; // To do: add all fields/ variabels
-//   const userAsJson = JSON.stringify(userToUpdate);
-//   const response = await fetch(`${endpoint}/users/${selectedArtist.id}`, {
-//     method: "PUT",
-//     body: userAsJson,
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//   });
-//   if (response.ok) {
-//     // if success, update the users grid
-//     // To do: make sure to update the users grid in order to display the new user
-//     updateUsersGrid();
-//     // and scroll to top
-//     // To do: call scrollToTop to scroll when created
-//     scrollToTop();
-//   }
-// }
+async function updateUser(event) {
+  event.preventDefault();
+  console.log(event);
+  const form = event.target;
+
+  const name = form.name.value;
+  const birthdate = form.birthdate.value;
+  const activeSince = form.activeSince.value;
+  const label = form.label.value;
+  const website = form.website.value;
+  const genres = form.genreOutput.value;
+  const shortDescription = form.description.value;
+  const image = form.image.value;
+
+  // update user
+  const artistToUpdate = {
+    name,
+    birthdate,
+    activeSince,
+    label,
+    website,
+    genres,
+    shortDescription,
+    image,
+  }; // To do: add all fields/ variabels
+  const artistAsJson = JSON.stringify(artistToUpdate);
+  const response = await fetch(`${endpoint}/artists/${selectedArtist.id}`, {
+    method: "PUT",
+    body: artistAsJson,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  if (response.ok) {
+    updateArtistsGrid();
+    scrollToTop();
+  }
+}
 
 // DELETE
 async function deleteUser(id) {
@@ -141,10 +180,12 @@ async function deleteUser(id) {
 // // // To do: add submit event listener to create form (#form-create)
 // // document.querySelector("#form-create").addEventListener("submit", createUser);
 // // // To do: add submit event listener to update form (#form-update)
-// // document.querySelector("#form-update").addEventListener("submit", updateUser);
-// function scrollToTop() {
-//   window.scrollTo({ top: 0, behavior: "smooth" });
-// }
+document
+  .querySelector("#form-edit-artist")
+  .addEventListener("submit", updateUser);
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 async function updateArtistsGrid() {
   const users = await readArtists();

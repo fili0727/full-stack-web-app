@@ -151,10 +151,10 @@
         <button id="dialog-close-btn">X</button>
       </form>
       <h2>Edit artist</h2>
-      <form id="form-update-artist" method="dialog">
+      <form id="form-update" method="dialog">
         <button id="dialog-close-btn">X</button>
       </form>
-      <h2>Edit artist:</h2>
+      <h2></h2>
       <form id="form-edit-artist" method="dialog">
         <label for="name">Name:</label>
         <input
@@ -176,7 +176,7 @@
         <input
           type="text"
           id="edit-active-since"
-          name="active-since"
+          name="activeSince"
           placeholder="Edit when the artist first active"
           required
         />
@@ -210,13 +210,14 @@
             <button type="button" id="remove-genre-btn-edit">-</button>
           </div>
         </div>
-        <output id="genre-output-edit" name="genre"></output>
+        <output id="genre-output-edit" name="genreOutput"></output>
         <label for="description">Short description: </label>
         <input
           type="text"
           id="edit-description"
           name="description"
           placeholder="Edit the description of the artist"
+          required
         />
         <label for="image">Image: </label>
         <input

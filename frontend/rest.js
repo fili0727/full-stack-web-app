@@ -7,6 +7,7 @@ import {
 } from "./app.js";
 
 let selectedArtist;
+let favoritesArray = [];
 
 const endpoint = "http://localhost:1989";
 
@@ -157,6 +158,19 @@ async function updateArtistsGrid() {
   displayArtists(artists);
 }
 
+async function addToFavorites(artist) {
+  const response = await fetch(endpoint + "/favorites", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(artist),
+  });
+  if (response.ok) {
+    favoritesArray = await response.json();
+  }
+}
+
 export {
   updateArtistsGrid,
   createArtist,
@@ -164,4 +178,5 @@ export {
   updateArtist,
   endpoint,
   selectArtist,
+  addToFavorites,
 };

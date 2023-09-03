@@ -7,11 +7,11 @@ import {
   updateArtist,
   endpoint,
   selectArtist,
+  addToFavorites,
 } from "./rest.js";
 
-import { updateFavoritesGrid, favoritesArray } from "./favorites.js";
+import { updateFavoritesGrid, displayFavorites } from "./favorites.js";
 
-let favoriteArtists = [];
 let sortType = "normal";
 let filterOption = "alle";
 let teamOption = "";
@@ -40,7 +40,7 @@ async function initApp() {
   document
     .querySelector("#remove-genre-btn-create")
     .addEventListener("click", () =>
-      removegenreToOutput(document.querySelector("#genre-output-create"))
+      removeGenreToOutput(document.querySelector("#genre-output-create"))
     );
 }
 
@@ -88,12 +88,15 @@ function displayArtists(list) {
 
     document
       .querySelector("#artists-grid article:last-child .btn-favorite")
-      .addEventListener("click", () => addToFavorites(artist));
+      .addEventListener("click", () => addToFavoritesClicked(artist));
   }
 }
 
-async function addToFavorites(artist) {
-  console.log(artist);
+async function addToFavoritesClicked(artist) {
+  const response = await addToFavorites(artist);
+  if (response.ok) {
+    displayFavorites(favoritesArray);
+  }
 }
 
 function addGenreToOutput(genreSelector, outputSelector) {

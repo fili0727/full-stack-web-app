@@ -54,24 +54,9 @@ async function removeFromFavorites(artist) {
   }
 }
 
-function deleteFavorite() {}
-
-function addToArray(artist) {}
-
 async function updateFavoritesGrid() {
   const artists = await readFavorites();
   displayFavorites(artists);
 }
 
-// function prepareData(dataObject) {
-//   console.log(dataObject);
-//   const array = [];
-//   for (const key in dataObject) {
-//     const object = dataObject[key];
-//     object.id = key;
-//     array.push(object);
-//   }
-//   return array;
-// }
-
-export { updateFavoritesGrid, favoritesArray };
+export { updateFavoritesGrid, favoritesArray, displayFavorites };

@@ -2,11 +2,9 @@
 
 import {
   updateArtistsGrid,
-  createArtist,
   deleteArtist,
-  updateArtist,
-  endpoint,
   selectArtist,
+  createArtist,
   addToFavorites,
 } from "./rest.js";
 
@@ -20,7 +18,9 @@ window.addEventListener("load", initApp);
 async function initApp() {
   console.log("js is working");
   updateGrid();
-
+  eventListeners();
+}
+function eventListeners() {
   document
     .querySelector("#create-artist-btn")
     .addEventListener("click", showCreateUserDialog);
@@ -47,12 +47,12 @@ async function initApp() {
     .addEventListener("change", filterByGenre);
 }
 
-function filterByGenre(event) {
-  const genre = event.target.value;
-  filterOption = genre;
-  console.log(filterOption);
-  displayArtists();
-}
+// function filterByGenre(event) {
+//   const genre = event.target.value;
+//   filterOption = genre;
+//   console.log(filterOption);
+//   displayArtists(artists);
+// }
 
 function updateGrid() {
   updateFavoritesGrid();
@@ -105,7 +105,7 @@ function displayArtists(list) {
 async function addToFavoritesClicked(artist) {
   const response = await addToFavorites(artist);
   if (response.ok) {
-    displayFavorites(favoritesArray);
+    displayFavorites();
   }
 }
 
@@ -120,6 +120,7 @@ function addGenreToOutput(genreSelector, outputSelector) {
       outputSelector.textContent += ", " + genreValue;
     else outputSelector.textContent += genreValue;
 }
+
 function removeGenreToOutput(outputSelector) {
   outputSelector.textContent = "";
 }

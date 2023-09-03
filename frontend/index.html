@@ -10,7 +10,7 @@
     <header>GrooveGrid</header>
     <div class="filter-grid">
       <div>
-        <button id="create-user-btn">create artist</button>
+        <button id="create-artist-btn">create artist</button>
       </div>
       <div>
         <label for="searchbar"></label>
@@ -37,32 +37,15 @@
     </div>
 
     <div>
+      <h2>Favorites</h2>
+      <section class="grid-container" id="favorites"></section>
+    </div>
+
+    <div>
+      <h2>All artists</h2>
       <section id="artists-grid" class="grid-container"></section>
     </div>
     <footer>bla bla bla</footer>
-
-    <!-- ARTIST DIALOG-->
-    <!-- 
-    <dialog id="dialog-artist-info">
-      <form method="dialog">
-        <button id="dialog-close-btn">X</button>
-      </form>
-      <section class="dialog-grid">
-        <section>
-          <h3><strong>Artist Info</strong></h3>
-          <img id="dialog-image" />
-          <h4 id="dialog-name">Name</h4>
-          <ul>
-            <li>Birthdate: <span id="dialog-birthdate"></span></li>
-            <li>Genres: <span id="dialog-genres"></span></li>
-            <li>Active since: <span id="dialog-active-since"></span></li>
-            <li>Current label: <span id="dialog-label"></span></li>
-            <li>Website: <span id="dialog-website"></span></li>
-            <li>Artist description: <span id="dialog-description"></span></li>
-          </ul>
-        </section>
-      </section>
-    </dialog> -->
 
     <!-- CREATE DIALOG-->
     <dialog id="dialog-create-artist">
@@ -91,7 +74,7 @@
         <input
           type="text"
           id="create-active-since"
-          name="active-since"
+          name="activeSince"
           placeholder="What year was the artist first active"
           required
         />
@@ -112,7 +95,7 @@
           required
         />
         <label for="genres">Genres:</label>
-        <select name="genres" id="create-genres" required>
+        <select name="genres" id="create-genres">
           <option value="" selected>genre</option>
           <option value="pop">pop</option>
           <option value="country">country</option>
@@ -197,7 +180,7 @@
           required
         />
         <label for="genres">Genres:</label>
-        <select name="genres" id="edit-genres" required>
+        <select name="genres" id="edit-genres">
           <option value="" selected>genre</option>
           <option value="pop">pop</option>
           <option value="country">country</option>
@@ -234,7 +217,7 @@
     <!--DELETE DIALOG-->
     <dialog id="dialog-delete-artist">
       <h2>Are you sure you would like to delete the artist?</h2>
-      <p id="dialog-delete-artist"></p>
+      <p id="dialog-delete-artist-name"></p>
       <form action="" id="form-delete-artist">
         <div id="delete-grid">
           <input id="btn-yes" type="submit" value="Yes" />

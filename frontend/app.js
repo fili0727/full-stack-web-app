@@ -13,9 +13,8 @@ import {
 import { updateFavoritesGrid, displayFavorites } from "./favorites.js";
 
 let sortType = "normal";
-let filterOption = "alle";
-let teamOption = "";
-
+let filterOption = "";
+let artists;
 window.addEventListener("load", initApp);
 
 async function initApp() {
@@ -42,6 +41,17 @@ async function initApp() {
     .addEventListener("click", () =>
       removeGenreToOutput(document.querySelector("#genre-output-create"))
     );
+
+  document
+    .querySelector("#filterByGenre")
+    .addEventListener("change", filterByGenre);
+}
+
+function filterByGenre(event) {
+  const genre = event.target.value;
+  filterOption = genre;
+  console.log(filterOption);
+  displayArtists();
 }
 
 function updateGrid() {
@@ -128,4 +138,10 @@ function deleteClicked(artist) {
     .addEventListener("submit", () => deleteArtist(artist.id));
 }
 
-export { displayArtists, addGenreToOutput, removeGenreToOutput, updateGrid };
+export {
+  displayArtists,
+  addGenreToOutput,
+  removeGenreToOutput,
+  updateGrid,
+  filterOption,
+};

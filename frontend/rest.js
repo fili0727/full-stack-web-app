@@ -4,6 +4,7 @@ import {
   displayArtists,
   addGenreToOutput,
   removeGenreToOutput,
+  filterOption,
 } from "./app.js";
 
 let selectedArtist;
@@ -152,9 +153,23 @@ async function deleteArtist(id) {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+function getAllGenre(list, genre) {
+  console.log(`filtering for genre: ${genre}`);
+  if (genre === "") {
+    return list;
+  }
+  return list.filter(x => x.role == genre);
+}
+
+function filterList() {
+  // const filteredList = getAllGenre(filterOption);
+  // const filteredTeamList = filterByTeam(filteredList);
+  // return filteredList;
+}
 
 async function updateArtistsGrid() {
   const artists = await readArtists();
+  // const filteredList = filterList(artists);
   displayArtists(artists);
 }
 

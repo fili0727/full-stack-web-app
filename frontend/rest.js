@@ -111,7 +111,7 @@ async function updateArtist(event) {
   const activeSince = form.activeSince.value;
   const label = form.label.value;
   const website = form.website.value;
-  const genres = form.genreOutput.value;
+  const genres = form.genreOutput.textContent;
   const shortDescription = form.description.value;
   const image = form.image.value;
 

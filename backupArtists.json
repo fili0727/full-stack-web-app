@@ -2,43 +2,43 @@
   {
     "id": "0",
     "name": "Billie Eilish",
-    "birthdate": "18-12-2001",
+    "birthdate": "2001-12-18",
     "activeSince": "2015",
-    "genres": "pop, electropop, alternative",
+    "genres": "pop, alternative",
     "label": "Darkroom",
     "website": "https://www.billieeilish.com",
     "image": "https://www.billieeilish.com/files/2021/04/release_202104_BE-HTE-Title-Cover-1024x1024.jpg",
     "shortDescription": "Chart-topping teenage sensation.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "1",
     "name": "Taylor Swift",
-    "birthdate": "13-12-1989",
+    "birthdate": "1989-12-13",
     "activeSince": "2006",
     "genres": "pop, country, folk",
     "label": "Republic Records",
     "website": "https://www.taylorswift.com",
     "image": "https://www.rollingstone.com/wp-content/uploads/2023/07/Taylor-Swift-Speak-Now-Is-Here.jpg",
     "shortDescription": "The music industry",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "2",
     "name": "Adele",
-    "birthdate": "05-05-1988",
+    "birthdate": "1988-05-05",
     "activeSince": "2006",
     "genres": "pop, soul, R&B",
     "label": "XL Recordings",
     "website": "https://www.adele.com",
     "image": "https://i.guim.co.uk/img/media/7c2140fe370efeed0cbfd4f9c8423369f1a643b8/0_80_8640_5184/master/8640.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d6e09182c65f81853c0373e9c2bc6907",
     "shortDescription": "The voice of a generation.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "3",
     "name": "Ed Sheeran",
-    "birthdate": "17-02-1991",
+    "birthdate": "1991-02-17",
     "activeSince": "2005",
     "genres": "pop, folk, hiphop",
     "label": "Asylum Records",
@@ -50,7 +50,7 @@
   {
     "id": "4",
     "name": "Beyoncé",
-    "birthdate": "04-09-1981",
+    "birthdate": "1981-09-04",
     "activeSince": "1990",
     "genres": "R&B, pop, hiphop",
     "label": "Parkwood Entertainment",
@@ -62,7 +62,7 @@
   {
     "id": "5",
     "name": "John Legend",
-    "birthdate": "28-12-1978",
+    "birthdate": "1978-12-28",
     "activeSince": "2004",
     "genres": "R&B, soul, pop",
     "label": "GOOD Music",
@@ -74,7 +74,7 @@
   {
     "id": "6",
     "name": "Drake",
-    "birthdate": "24-10-1986",
+    "birthdate": "1986-10-24",
     "activeSince": "2001",
     "genres": "hiphop, R&B, pop",
     "label": "OVO Sound",
@@ -86,7 +86,7 @@
   {
     "id": "7",
     "name": "Rihanna",
-    "birthdate": "20-02-1988",
+    "birthdate": "1988-02-20",
     "activeSince": "2005",
     "genres": "pop, R&B",
     "label": "Roc Nation",
@@ -98,7 +98,7 @@
   {
     "id": "8",
     "name": "Eminem",
-    "birthdate": "17-10-1972",
+    "birthdate": "1972-10-17",
     "activeSince": "1996",
     "genres": "hiphop, rap",
     "label": "Shady Records",
@@ -110,9 +110,9 @@
   {
     "id": "9",
     "name": "Katy Perry",
-    "birthdate": "25-10-1984",
+    "birthdate": "1984-10-25",
     "activeSince": "2001",
-    "genres": "pop, electropop",
+    "genres": "pop",
     "label": "Capitol Records",
     "website": "https://www.katyperry.com",
     "image": "https://m.media-amazon.com/images/M/MV5BMjE4MDI3NDI2Nl5BMl5BanBnXkFtZTcwNjE5OTQwOA@@._V1_.jpg",
@@ -122,7 +122,7 @@
   {
     "id": "10",
     "name": "Bruno Mars",
-    "birthdate": "08-10-1985",
+    "birthdate": "1985-10-08",
     "activeSince": "2004",
     "genres": "pop, R&B, funk",
     "label": "Atlantic Records",
@@ -134,7 +134,7 @@
   {
     "id": "11",
     "name": "Ariana Grande",
-    "birthdate": "26-06-1993",
+    "birthdate": "1993-06-26",
     "activeSince": "2008",
     "genres": "pop, R&B",
     "label": "Republic Records",
@@ -146,7 +146,7 @@
   {
     "id": "12",
     "name": "Coldplay",
-    "birthdate": "16-03-1996",
+    "birthdate": "1996-03-16",
     "activeSince": "1996",
     "genres": "pop",
     "label": "Parlophone",
@@ -158,7 +158,7 @@
   {
     "id": "13",
     "name": "Justin Bieber",
-    "birthdate": "01-03-1994",
+    "birthdate": "1994-03-01",
     "activeSince": "2007",
     "genres": "pop, R&B",
     "label": "Def Jam Recordings",
@@ -170,9 +170,9 @@
   {
     "id": "14",
     "name": "Lady Gaga",
-    "birthdate": "28-03-1986",
+    "birthdate": "1986-03-28",
     "activeSince": "2005",
-    "genres": "pop, electropop",
+    "genres": "pop",
     "label": "Interscope Records",
     "website": "https://www.ladygaga.com",
     "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1127409044.jpg",
@@ -182,31 +182,31 @@
   {
     "id": "15",
     "name": "The Weeknd",
-    "birthdate": "16-02-1990",
+    "birthdate": "1990-02-16",
     "activeSince": "2010",
     "genres": "R&B, pop, hiphop",
     "label": "XO",
     "website": "https://www.theweeknd.com",
     "image": "https://variety.com/wp-content/uploads/2020/06/unnamed-1-2-e1593560403821.jpg",
     "shortDescription": "Grammy-winning R&B superstar.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "16",
     "name": "Shawn Mendes",
-    "birthdate": "08-08-1998",
+    "birthdate": "1998-08-08",
     "activeSince": "2013",
     "genres": "pop, rock, folk",
     "label": "Island Records",
     "website": "https://www.shawnmendesofficial.com",
     "image": "https://i.scdn.co/image/ab6761610000e5eb46e7a06fa6dfefaed6a3f0db",
     "shortDescription": "Talented singer-songwriter and guitarist.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "17",
     "name": "Lana Del Rey",
-    "birthdate": "21-06-1985",
+    "birthdate": "1985-06-21",
     "activeSince": "2005",
     "genres": "indie, alternative",
     "label": "Polydor Records",
@@ -218,9 +218,9 @@
   {
     "id": "18",
     "name": "Imagine Dragons",
-    "birthdate": "03-07-1987",
+    "birthdate": "1987-07-03",
     "activeSince": "2008",
-    "genres": "indie, electropop",
+    "genres": "indie, pop",
     "label": "KIDinaKORNER",
     "website": "https://www.imaginedragonsmusic.com",
     "image": "https://www.billboard.com/wp-content/uploads/2022/12/imagine-dragons-Press-Photo-Credit-Eric-Ray-Davidson-2022-billboard-1548.jpg",
@@ -230,7 +230,7 @@
   {
     "id": "19",
     "name": "Kendrick Lamar",
-    "birthdate": "17-06-1987",
+    "birthdate": "1987-06-17",
     "activeSince": "2004",
     "genres": "hiphop, rap",
     "label": "Top Dawg Entertainment",
@@ -242,9 +242,9 @@
   {
     "id": "20",
     "name": "Dua Lipa",
-    "birthdate": "22-08-1995",
+    "birthdate": "1995-08-22",
     "activeSince": "2015",
-    "genres": "pop, electropop",
+    "genres": "pop",
     "label": "Warner Records",
     "website": "https://www.dualipa.com",
     "image": "https://wwd.com/wp-content/uploads/2023/08/GettyImages-1537575808.jpg",
@@ -254,19 +254,19 @@
   {
     "id": "21",
     "name": "Miley Cyrus",
-    "birthdate": "23-11-1992",
+    "birthdate": "1992-11-23",
     "activeSince": "2006",
     "genres": "pop, rock, country",
     "label": "RCA Records",
     "website": "https://www.mileycyrus.com",
     "image": "https://www.instyle.com/thmb/nqUXjXs-V7hojMR1b1b_ySc7ZH8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1472442509-ea82a448d8c94a588d17ead2f2cc5a92.jpg",
     "shortDescription": "Multi-talented singer, songwriter, and actress.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "22",
     "name": "Post Malone",
-    "birthdate": "04-07-1995",
+    "birthdate": "1995-07-04",
     "activeSince": "2015",
     "genres": "hiphop, pop, rap",
     "label": "Republic Records",
@@ -278,7 +278,7 @@
   {
     "id": "23",
     "name": "Alicia Keys",
-    "birthdate": "25-01-1981",
+    "birthdate": "1981-01-25",
     "activeSince": "1996",
     "genres": "R&B, soul, pop",
     "label": "RCA Records",
@@ -290,7 +290,7 @@
   {
     "id": "24",
     "name": "Sam Smith",
-    "birthdate": "19-05-1992",
+    "birthdate": "1992-05-19",
     "activeSince": "2012",
     "genres": "pop, R&B, soul",
     "label": "Capitol Records",
@@ -302,7 +302,7 @@
   {
     "id": "25",
     "name": "Elton John",
-    "birthdate": "25-03-1947",
+    "birthdate": "1947-03-25",
     "activeSince": "1962",
     "genres": "pop, rock",
     "label": "Rocket Records",
@@ -314,7 +314,7 @@
   {
     "id": "26",
     "name": "Whitney Houston",
-    "birthdate": "09-08-1963",
+    "birthdate": "1963-08-09",
     "activeSince": "1977",
     "genres": "R&B, pop, soul",
     "label": "Arista Records",
@@ -326,7 +326,7 @@
   {
     "id": "27",
     "name": "U2",
-    "birthdate": "25-09-1976",
+    "birthdate": "1976-09-25",
     "activeSince": "1976",
     "genres": "rock",
     "label": "Island Records",
@@ -338,7 +338,7 @@
   {
     "id": "28",
     "name": "Bob Marley",
-    "birthdate": "06-02-1945",
+    "birthdate": "1945-02-06",
     "activeSince": "1962",
     "genres": "reggae",
     "label": "Tuff Gong",
@@ -350,7 +350,7 @@
   {
     "id": "29",
     "name": "Queen",
-    "birthdate": "13-07-1971",
+    "birthdate": "1971-07-13",
     "activeSince": "1970",
     "genres": "rock, pop",
     "label": "EMI",
@@ -362,7 +362,7 @@
   {
     "id": "30",
     "name": "Michael Jackson",
-    "birthdate": "29-08-1958",
+    "birthdate": "1958-08-29",
     "activeSince": "1964",
     "genres": "pop, R&B",
     "label": "Epic Records",
@@ -374,7 +374,7 @@
   {
     "id": "31",
     "name": "David Bowie",
-    "birthdate": "08-01-1947",
+    "birthdate": "1947-01-08",
     "activeSince": "1962",
     "genres": "rock, pop",
     "label": "RCA Records",
@@ -386,7 +386,7 @@
   {
     "id": "32",
     "name": "Bob Dylan",
-    "birthdate": "24-05-1941",
+    "birthdate": "1941-05-24",
     "activeSince": "1961",
     "genres": "folk, rock",
     "label": "Columbia Records",
@@ -398,9 +398,9 @@
   {
     "id": "33",
     "name": "Aerosmith",
-    "birthdate": "01-09-1969",
+    "birthdate": "1969-09-01",
     "activeSince": "1970",
-    "genres": "rock",
+    "genres": "rock, hiphop",
     "label": "Columbia Records",
     "website": "https://www.aerosmith.com",
     "image": "https://parade.com/.image/t_share/MTk3NjQwNDY1NTc3NjgyMjIx/aerosmith-final-tour-peace-out-2023.jpg",
@@ -410,7 +410,7 @@
   {
     "id": "34",
     "name": "Prince",
-    "birthdate": "07-06-1958",
+    "birthdate": "1958-06-07",
     "activeSince": "1976",
     "genres": "pop, R&B, funk",
     "label": "Warner Bros. Records",
@@ -422,7 +422,7 @@
   {
     "id": "35",
     "name": "Led Zeppelin",
-    "birthdate": "25-09-1968",
+    "birthdate": "1968-09-25",
     "activeSince": "1968",
     "genres": "rock",
     "label": "Atlantic Records",
@@ -430,5 +430,29 @@
     "image": "https://www.rollingstone.com/wp-content/uploads/2012/11/LedZeppelin.jpg",
     "shortDescription": "Pioneering rock band that redefined the genre.",
     "favorite": false
+  },
+  {
+    "name": "Olivia Rodrigo",
+    "birthdate": "2003-02-20",
+    "activeSince": "2015",
+    "label": "Geffen",
+    "website": "https://www.oliviarodrigo.com/",
+    "genres": "pop",
+    "shortDescription": "Teenage icon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Olivia_Rodrigo_with_Dr_Fauci_1.png/440px-Olivia_Rodrigo_with_Dr_Fauci_1.png",
+    "favorite": false,
+    "id": 1693825335549
+  },
+  {
+    "name": "bacon",
+    "birthdate": "2001-01-05",
+    "activeSince": "1996",
+    "label": "Darkroom",
+    "website": "https://www.billieeilish.com",
+    "genres": "soul, folk, pop",
+    "shortDescription": "Singer-songwriter who first achieved fame with the R&B group Destiny's Child",
+    "image": "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg",
+    "favorite": false,
+    "id": 1693826122457
   }
 ]

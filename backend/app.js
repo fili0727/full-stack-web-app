@@ -73,53 +73,6 @@ app.delete("/artists/:id", async (request, response) => {
   response.json(artists);
 });
 
-// app.get("/favorites", async (request, response) => {
-//   const data = await fs.readFile("favorites.json");
-//   const favorites = JSON.parse(data);
-//   const sortedFavorites = favorites.sort((a, b) =>
-//     a.name.localeCompare(b.name)
-//   );
-//   response.json(sortedFavorites);
-// });
-
-// app.get("/favorites/:id", async (request, response) => {
-//   const id = Number(request.params.id);
-//   console.log(id);
-//   const data = await fs.readFile("favorites.json");
-//   const favorites = JSON.parse(data);
-//   const result = favorites.find(favorite => favorite.id == id);
-//   response.json(result);
-// });
-
-// app.post("/favorites", async (request, response) => {
-//   const newFavorite = request.body;
-//   newFavorite.id = new Date().getTime();
-//   const data = await fs.readFile("favorites.json");
-//   const favorites = JSON.parse(data);
-//   favorites.push(newFavorite);
-//   fs.writeFile("favorites.json", JSON.stringify(favorites));
-//   response.json(favorites);
-
-//   if (favorites.includes(newFavorite)) {
-//     favorites.filter(newFavorite => newFavorite !== favorites);
-//   }
-//   response.json({ success: true });
-// });
-
-// app.delete("/favorites/:id", async (request, response) => {
-//   const id = request.params.id;
-//   console.log(id);
-
-//   const data = await fs.readFile("favorites.json");
-//   const favorites = JSON.parse(data);
-
-//   const newFavorites = favorites.filter(favorite => favorite.id != id);
-
-//   fs.writeFile("favorites.json", JSON.stringify(newFavorites));
-
-//   response.json(favorites);
-// });
-
 app.listen(1989, () => {
-  console.log("hej");
+  console.log("Kører på http://localhost:1989");
 });

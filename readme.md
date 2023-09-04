@@ -1,7 +1,17 @@
-Download and open the repository.
+Download og naviger til "full-stack-web-app".
 
-In the terminal make sure that you are on the "backend" folder indside the repository
-Do this by writing "cd backend" in the terminal when you are already in the "full-stack-web-app" folder
-Once you are in the "backend" folder write "node --watch app.js" and then open the liveserver using the VS code extension "Live Server"
+Initialiser Node.js, express og cors ved at køre følgende kommandoer i terminalen.
 
-You should then see the website with all data
+npm install express
+
+npm install cors
+
+I terminalen vær sikker på du er i "backend" folder. Når du er der skriv følgende i terminalen
+
+node --watch app.js
+
+Du kan eventuelt åbne "http://localhost:1989/artists" for at teste om den virker.
+
+Start live server og naviger til "frontend" folder ved hjælp af VS code extensionen "Live Server"
+
+Herefter burde hjemmesiden blive vist på live server

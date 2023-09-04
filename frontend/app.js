@@ -5,20 +5,21 @@ import {
   deleteArtist,
   selectArtist,
   createArtist,
-  addToFavorites,
+  updateArtistFavorite,
+  globalArtists,
 } from "./rest.js";
 
-import { updateFavoritesGrid, displayFavorites } from "./favorites.js";
+// import { updateFavoritesGrid, displayFavorites } from "./favorites.js";
 
-let sortType = "normal";
-let filterOption = "";
-let artists;
+let sortType = "default";
+let filterOption;
+
 window.addEventListener("load", initApp);
 
 async function initApp() {
   console.log("js is working");
-  updateGrid();
   eventListeners();
+  updateArtistsGrid();
 }
 function eventListeners() {
   document
@@ -41,22 +42,32 @@ function eventListeners() {
     .addEventListener("click", () =>
       removeGenreToOutput(document.querySelector("#genre-output-create"))
     );
-
   document
     .querySelector("#filterByGenre")
-    .addEventListener("change", filterByGenre);
+    .addEventListener("change", genreSelected);
+
+  document.querySelector("#sortBy").addEventListener("change", sortSelected);
 }
 
-// function filterByGenre(event) {
-//   const genre = event.target.value;
-//   filterOption = genre;
-//   console.log(filterOption);
-//   displayArtists(artists);
-// }
+async function genreSelected(event) {
+  const select = event.target.value;
 
-function updateGrid() {
-  updateFavoritesGrid();
-  updateArtistsGrid();
+  displayArtists(filterByGenre(globalArtists, select));
+}
+
+function filterByGenre(list, filterSelected) {
+  return list.filter(artist => artist.genres.includes(filterSelected));
+}
+
+function sortSelected(event) {
+  const selectedType = event.target.value;
+  sortType = selectedType;
+  if (sortType == "reverse") {
+    displayArtists(globalArtists.sort((a, b) => b.name.localeCompare(a.name)));
+  }
+  if (sortType == "default") {
+    displayArtists(globalArtists.sort((a, b) => a.name.localeCompare(b.name)));
+  }
 }
 
 function showCreateUserDialog() {
@@ -65,7 +76,6 @@ function showCreateUserDialog() {
 
 function displayArtists(list) {
   document.querySelector("#artists-grid").innerHTML = "";
-
   for (const artist of list) {
     document.querySelector("#artists-grid").insertAdjacentHTML(
       "beforeend",
@@ -102,11 +112,52 @@ function displayArtists(list) {
   }
 }
 
-async function addToFavoritesClicked(artist) {
-  const response = await addToFavorites(artist);
-  if (response.ok) {
-    displayFavorites();
+function addToFavoritesClicked(artist) {
+  artist.favorite = true;
+  updateArtistFavorite(artist);
+
+  console.log(artist);
+
+  updateArtistsGrid();
+}
+
+function displayFavorites(list) {
+  document.querySelector("#favorites").innerHTML = "";
+
+  for (const artist of list) {
+    document.querySelector("#favorites").insertAdjacentHTML(
+      "beforeend",
+      /*html*/ `
+            <article class="grid-item-user">
+            <img src="${artist.image}">
+                <h2>${artist.name}</h2>
+                <h3>${artist.shortDescription}</h3>
+                <p>Born: ${artist.birthdate}</p>
+                <p>Career start: ${artist.activeSince}</p>
+                <p>Genres: ${artist.genres} </p>
+                <p>Label: ${artist.label}</p>
+                <a href="${artist.website}">Artist website</a>
+
+                <div class="btns">
+                    <button class="btn-favorite">Remove from favorites</button>
+                </div>
+            </article>
+        `
+    );
+
+    document
+      .querySelector("#favorites article:last-child .btn-favorite")
+      .addEventListener("click", () => removeFromFavorites(artist));
   }
+}
+
+async function removeFromFavorites(artist) {
+  artist.favorite = false;
+  updateArtistFavorite(artist);
+
+  console.log(artist);
+
+  updateArtistsGrid();
 }
 
 function addGenreToOutput(genreSelector, outputSelector) {
@@ -143,6 +194,5 @@ export {
   displayArtists,
   addGenreToOutput,
   removeGenreToOutput,
-  updateGrid,
-  filterOption,
+  displayFavorites,
 };

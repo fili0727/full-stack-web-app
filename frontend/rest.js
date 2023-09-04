@@ -4,11 +4,11 @@ import {
   displayArtists,
   addGenreToOutput,
   removeGenreToOutput,
-  filterOption,
+  displayFavorites,
 } from "./app.js";
 
 let selectedArtist;
-let favoritesArray = [];
+let globalArtists;
 
 const endpoint = "http://localhost:1989";
 
@@ -29,10 +29,10 @@ async function createArtist(event) {
   const activeSince = form.activeSince.value;
   const label = form.label.value;
   const website = form.website.value;
-  const genres = form.genres.value;
-
+  const genres = form.genre.textContent;
   const shortDescription = form.description.value;
   const image = form.image.value;
+  const favorite = false;
 
   const newArtist = {
     name,
@@ -43,6 +43,7 @@ async function createArtist(event) {
     genres,
     shortDescription,
     image,
+    favorite,
   };
 
   const artistAsJson = JSON.stringify(newArtist);
@@ -91,7 +92,7 @@ function selectArtist(artist) {
   document
     .querySelector("#remove-genre-btn-edit")
     .addEventListener("click", () =>
-      removegenreToOutput(document.querySelector("#genre-output-edit"))
+      removeGenreToOutput(document.querySelector("#genre-output-edit"))
     );
 
   document
@@ -138,6 +139,44 @@ async function updateArtist(event) {
   }
 }
 
+async function updateArtistFavorite(artist) {
+  console.log(artist);
+
+  const name = artist.name;
+  const birthdate = artist.birthdate;
+  const activeSince = artist.activeSince;
+  const label = artist.label;
+  const website = artist.website;
+  const genres = artist.genres;
+  const shortDescription = artist.shortDescription;
+  const image = artist.image;
+  const favorite = artist.favorite;
+
+  const artistToUpdate = {
+    name,
+    birthdate,
+    activeSince,
+    label,
+    website,
+    genres,
+    shortDescription,
+    image,
+    favorite,
+  };
+  const artistAsJson = JSON.stringify(artistToUpdate);
+  const response = await fetch(`${endpoint}/artists/${artist.id}`, {
+    method: "PUT",
+    body: artistAsJson,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  if (response.ok) {
+    updateArtistsGrid();
+    scrollToTop();
+  }
+}
+
 // DELETE
 
 async function deleteArtist(id) {
@@ -153,45 +192,20 @@ async function deleteArtist(id) {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
-function getAllGenre(list, genre) {
-  console.log(`filtering for genre: ${genre}`);
-  if (genre === "") {
-    return list;
-  }
-  return list.filter(x => x.role == genre);
-}
-
-function filterList() {
-  // const filteredList = getAllGenre(filterOption);
-  // const filteredTeamList = filterByTeam(filteredList);
-  // return filteredList;
-}
 
 async function updateArtistsGrid() {
   const artists = await readArtists();
+  globalArtists = artists;
   // const filteredList = filterList(artists);
   displayArtists(artists);
-}
-
-async function addToFavorites(artist) {
-  const response = await fetch(endpoint + "/favorites", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(artist),
-  });
-  if (response.ok) {
-    favoritesArray = await response.json();
-  }
+  displayFavorites(artists.filter(artist => artist.favorite == true));
 }
 
 export {
   updateArtistsGrid,
   createArtist,
   deleteArtist,
-  updateArtist,
-  endpoint,
   selectArtist,
-  addToFavorites,
+  updateArtistFavorite,
+  globalArtists,
 };
